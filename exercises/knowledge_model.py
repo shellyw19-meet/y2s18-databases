@@ -6,6 +6,8 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 class Knowledge(Base):
+	__tablename__ = 'favorit TV shows'
+	
 	# Create a table with 4 columns
 	# The first column will be the primary key
 	# The second column should be a string representing
