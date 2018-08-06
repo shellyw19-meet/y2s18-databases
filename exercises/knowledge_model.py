@@ -7,7 +7,20 @@ Base = declarative_base()
 
 class Knowledge(Base):
 	__tablename__ = 'favorit TV shows'
-	
+	student_id = Column(Integer, primary_key=True)
+   	student_name = Column(String)
+  	show = Column(string)
+    rate = Column(integer)
+
+    def __repr__(self):
+       return ("student name: {}\n"
+               "show: {} \n"
+               "rate: {}").format(
+                    self.student_name, self.show, self.rate)
+
+Gilad
+
+
 	# Create a table with 4 columns
 	# The first column will be the primary key
 	# The second column should be a string representing
