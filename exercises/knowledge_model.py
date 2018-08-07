@@ -8,17 +8,16 @@ Base = declarative_base()
 class Knowledge(Base):
 	__tablename__ = 'favorit TV shows'
 	student_id = Column(Integer, primary_key=True)
-   	student_name = Column(String)
-  	show = Column(string)
-    rate = Column(integer)
+	student_name = Column(String)
+  	show = Column(String)
+	rate = Column(Integer)
 
-    def __repr__(self):
-       return ("student name: {}\n"
-               "show: {} \n"
-               "rate: {}").format(
-                    self.student_name, self.show, self.rate)
+	def __repr__(self):
+		return ("student_name {}\n"
+			"show{}\n"
+			"rate{}\n").format(self.student_name,self.show,self.rate)
 
-Gilad
+
 
 
 	# Create a table with 4 columns
@@ -29,4 +28,4 @@ Gilad
 	# topic of the article. The last column will be
 	# an integer, representing your rating of the article.
 
-	pass
+	
