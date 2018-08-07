@@ -24,10 +24,12 @@ def query_all_articles():
 print(query_all_articles())
 	
 
-def query_article_by_topic():
-	pass
+def query_article_by_name(name1):
+	return session.query(Knowledge).filter_by(name=name1).all()
+print(query_article_by_name())
+	
 
-def delete_article_by_topic():
+def delete_article_by_name():
 	pass
 
 def delete_all_articles():
